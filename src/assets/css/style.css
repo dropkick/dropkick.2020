@@ -1,0 +1,362 @@
+html {
+    background-color: #f0f0e8;
+    background-image: url('../img/bkg-concrete_tl.jpg');
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: repeat;
+    font-size: 12px;
+}
+
+body {
+    background: rgba(247, 247, 243, 0.5);
+    border-left: 1rem solid #f0f0e8;
+    border-right: 1rem solid #f0f0e8;  
+    box-sizing: border-box;
+    color: #414040;
+    flex-direction: column;
+    font-family: freight-big-pro, serif;
+    font-style: normal;
+    font-weight: 400;
+    grid-template-rows: 1fr 8fr 1fr;
+    margin: 0;
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+}
+
+body:before, body:after {
+    background: #f0f0e8;
+    content: "";
+    height: 1rem;
+    left: 0;
+    position: fixed;
+    right: 0;
+}
+
+body:before {
+    top: 0;
+}
+
+body:after {
+    bottom: 0;
+}
+
+.site-header {
+    align-self: start;
+}
+
+.logo {
+    color: #e31e10;
+    display: inline-block;
+    display: none;
+    pointer-events: auto;
+    position: fixed;
+    left: 3.6vw;
+    text-decoration: none;
+    bottom: 4vw;
+    width: 1.5rem;
+}
+
+.logo span {
+    display: none;
+    visibility: hidden;
+}
+
+.logo svg {
+    max-width: 100%;
+    width: 100%;
+}
+
+.page-content {
+    align-self: center;
+    justify-self: end;
+    margin-left: 6vw;
+}
+
+.page-content h1 {
+    font-size: 2.25rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 0.037em;
+    margin: 0.5rem 0;
+    max-width: 800px;
+    padding: 3rem 4rem 0 4vw;
+}
+
+.page-content .display {
+    color: #414040;
+    display: block;
+    font-family: synthese,sans-serif;
+    font-weight: 900;
+    font-style: italic;
+font-family: lust-display-didone, serif;
+font-weight: 400;
+font-style: normal;
+    font-size: 2.25rem;
+    font-size: 3.375rem;
+    font-size: 2.5rem;
+    /* letter-spacing: 0.027em; */
+    line-height: 1.25em;
+    margin: 0;
+    max-width: 940px;
+    padding: 1rem 0;
+}
+
+.page-content .display em {
+    font-style: normal;
+}
+
+.page-content .text-header .copy {
+    background: rgba(247, 247, 243, 0.7);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    padding: 2rem 4vw 1rem 4vw;
+}
+
+.page-content .text-header .copy p {
+    font-family: freight-big-pro, serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+   -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    letter-spacing: 0.0625rem;
+    line-height: 1.5;
+    margin: 0 0 1em;
+}
+
+.copy h2 {
+    color: #514b4d;
+    font-family: freight-big-pro, serif;
+    /* font-size: 2.25rem; */
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.006em;
+    /* margin: 0; */
+    margin: 0.25em 0;
+}
+
+.page-content .text-header .copy p:last-child {
+    /* font-size: 2em; */
+    font-size: 2rem;
+    /* font-size: 1.5rem; */
+    line-height: 1.75;
+    margin: 1em 0 0.5em;
+}
+
+.page-content .text-header .copy em {
+    font-family: freight-big-pro, serif;
+    font-style: italic;
+}
+
+.page-content .text-header .copy a.cta {
+    color: #ee4034;
+    font-style: italic;
+    text-decoration: none;
+    text-decoration: dotted underline #9a9994 1px;
+}
+
+.page-content .text-header .copy a.cta:hover {
+    color: #e15340;
+    text-decoration: solid underline #9a9994 1px;
+}
+
+.site-footer {
+    align-self: end;
+}
+
+.site-footer {
+    color: #514b4d;
+    padding: 1rem 0 2rem 12vw;
+    font-size: 1.25rem;
+    /* font-family: objektiv-mk1,sans-serif; */
+    font-family: synthese,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.0714em;
+    line-height: 3rem;
+    font-feature-settings: "lnum";
+}
+
+.site-footer address {
+    font-style: normal;
+    margin: 1em 3vw 0 0;
+    text-transform: uppercase;
+}
+
+.site-footer address strong {
+    color: #514b4d;
+    font-family: synthese,sans-serif;
+    font-size: 01.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.site-footer p a {
+    color: #514b4d;
+    color: #ee4034;
+    font-family: synthese,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none
+}
+
+.site-footer .co2-neutral img {
+    display: block;
+    height: auto;
+    filter: saturate(0.25);
+    opacity: 0.75;
+    width: 125px;
+}
+
+@media screen 
+    and (min-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+
+    .logo {
+        bottom: auto;
+        left: 3.5vw;
+        top: 5vw;
+        width: 2.5rem;
+    }
+
+    .page-content {
+        margin-left: 8vw;
+    }
+
+    .page-content h1 {
+        padding: 4rem 4rem 0 4vw;
+    }
+
+    .page-content .display {
+        /* font-size: 3.375rem; */
+        padding: 1rem 0;
+    }
+}
+
+@media screen 
+    and (min-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        display: grid;
+    }
+
+    .logo {
+        color: #e31e10;
+        display: inline-block;
+        left: 3vw;
+        pointer-events: auto;
+        position: fixed;
+        text-decoration: none;
+        top: 3vw;
+        width: 1.75rem;
+        z-index: 1200;
+    }
+
+    .page-content {
+        margin-left: 14vw;
+    }
+
+    .page-content h1 {
+        font-size: 1.5rem;
+        padding: 10rem 10rem 0 4vw;
+    }
+
+    .page-content .display {
+        font-size: 3.375rem;
+        padding: 0 0 2rem;
+    }
+
+    .page-content .text-header .copy {
+        background: rgba(247, 247, 243, 0.7);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2.5rem;
+        max-width: 1200px;
+        padding: 3rem 14vw 2rem 4vw;
+    }
+    
+    /* .page-content .text-header .copy p:last-child { */
+    .page-content .text-header .copy .act {
+        /* font-size: 2em; */
+        grid-column: span 2;
+        margin: 0 0 0.5em;
+    }
+
+    .site-footer {
+        /* bottom: 2vw; */
+        display: flex;
+        padding: 2vw 3vw 2vw 3vw;
+        /* position: fixed; */
+        font-size: 0.6875rem;
+        /* left: 3vw; */
+        letter-spacing: 0.0714em;
+        line-height: 1.25rem;
+        font-feature-settings: "lnum";
+        justify-content: space-between;
+    }
+
+    .site-footer .info-contact {
+        display: flex;
+    }
+
+    .site-footer address strong {
+        font-size: 0.875rem;
+    }
+
+    .site-footer .co2-neutral img {
+        align-self: flex-end;
+        filter: saturate(0.25);
+        opacity: 0.75;
+        width: 125px;
+    }
+}
+
+@media screen 
+    and (min-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+
+    body {
+        grid-template-rows: 1fr 5fr 1fr;
+    }
+
+    .page-content h1 {
+        padding: 6rem 10rem 0 4vw;
+    }
+
+    .page-content .display {
+        font-size: 3.5rem;
+        padding: 1rem 0 1rem;
+    }
+}
+
+@media screen 
+    and (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+
+    .page-content h1 {
+        padding: 2rem 10rem 0 4vw;
+    }
+    
+    .page-content .display {
+        font-size: 4rem;
+    }
+}
+
+@media screen 
+    and (min-width: 1600px) { 
+    html {
+        font-size: 18px;
+    }
+}

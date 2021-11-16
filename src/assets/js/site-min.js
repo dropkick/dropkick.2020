@@ -1,0 +1,1 @@
+if(document.readyState!='loading'){init();}else if(document.addEventListener){document.addEventListener('DOMContentLoaded',init);}else{document.attachEvent('onreadystatechange',function(){if(document.readyState=='complete'){init()}})}function init(){document.body.classList.add('js');document.body.classList.remove('loading','no-js');}

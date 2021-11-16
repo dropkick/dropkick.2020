@@ -1,0 +1,15 @@
+/* PEEPS */
+
+	DROPKICK - https://dropkick.design
+    Designer + Developer: Jason Duerr
+	Contact: jason [at] dropkickdesign.com
+	Twitter: @dropkickdesign
+	Location: Portland Oregon USA
+
+/* SITE */
+
+	Standards: HTML5, CSS3
+	Components: Static HTML, Javascript, Fonts by Typekit 
+	Last update: 2020-04-30
+	Language: English
+	Doctype: HTML5
